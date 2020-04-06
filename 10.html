@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>热泉港</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{/*网页居中补救*/
+                padding: 0;
+                margin: 0 auto;
+            }
+            .all{
+                margin: auto;
+                width: 1519px;
+                right: auto;
+                overflow: hidden;
+                display: block;
+                position: relative;
+            }
+             #biaoti{ /*“更多资讯”*/
+                 width: 180px;
+                 margin-bottom: 0px;
+                 margin-top: 10px;
+                 margin-left: 750px;
+                 font-size: 30px;
+                 font-weight: 700;
+                 color:cadetblue;
+             }
+
+            #header{/*最顶端*/
+                position: relative;
+                min-width: 100%;
+                margin: auto;
+                left: 0;
+                top: 0;
+                right: 0;
+                height: 30px;
+                padding-left: 100px;
+                background-color: black;
+                line-height: 31px;
+                letter-spacing: 0.088em;
+                display: inline-flex;/*行内元素弹性布局*/
+            }
+            .top img{/*顶端图标*/
+                width: 20px;  
+                padding-top: 6px;
+                padding-left: 20px;
+                padding-right: 15px;
+                padding-bottom: 5px;
+            }
+            .top a{/*顶端文段*/
+                width: 40px;
+                padding-right: 0px; 
+                padding-left: 0px;
+                letter-spacing: 4.06px;
+                text-decoration: none;
+                color: white;
+            }
+            .top {/*顶端文字*/
+                color:white;
+                font-weight: 800;
+                font-size: 14px;
+            }
+            .B{/*第二标题栏目*/
+                padding-top: 5px;
+                margin: auto;
+                width: 100%;
+                height: 75px;            
+                padding-left: 100px;
+                padding-right: 50px;
+                background-color: white;
+                line-height: 31px;
+                letter-spacing: 0.088em;
+                display: flex;/*行内元素弹性布局*/
+                margin: auto;
+                margin-top: 18px;
+            }
+            .B a{/* 导航链接 */
+                color:black;
+                text-align: center;
+                height: 100px;
+                text-decoration: none;
+                font-weight: 600;
+                padding-right: 25px;
+            }
+            .B a:hover:not(.active){/* 链接 - 修改颜色 */
+                color:cadetblue;
+            }
+            .B a.active{/* 选中连接 */
+                color:cadetblue;
+            }
+            #a{/*标志图片*/
+                width: 178px;
+                height: 48px;
+                padding-left: 17px;
+                padding-top: 13px;
+                border-right-width: 0px;
+                border-right-style: solid;
+                padding-right: 417px;
+            }
+            .B img{
+                height: 68px;
+                width: 68px;
+            }
+            .C{/*搜索栏目*/
+                margin: 0 auto;   
+                position: relative;
+                left: 0;
+                width: 1548px;
+                height: 377px;
+                background-color: #27281b;
+                line-height: 31px;
+                letter-spacing: 0.088em;
+                display: flex;/*行内元素弹性布局*/
+                background-image:url('bj.png');/*背景图片CSS*/
+                background-repeat:no-repeat;/*设置背景水平平铺不重复*/
+                min-height: 329px;
+                background-size: cover;/*拉伸无底色露出*/
+                background-size:100% 100%;
+            }
+            .site-search{/*搜索框*/
+                          position:relative;
+                          top: 249px;
+	                      width:300px;
+	                      height:50px;
+                          padding-left: 500px;
+
+             }
+            #search{
+                position: relative;
+                margin-top: 15px;
+            }
+            #search input{/*搜索输入*/
+                 padding-right: 30px; 
+                 outline: none;/*去掉边框*/
+                 height: 30px;
+            }
+            input.text{/*搜索输入*/
+                height: 32px;
+                width: 500px;
+                margin-left: 88px;
+                padding-top: 0px;
+                border-left-width: 0px;
+                border-left-style: solid;
+                padding-left: 100px;
+                padding-bottom: 0px;
+            }
+            button{/*搜索按钮*/
+                position: absolute;
+                background: cadetblue; 
+                color: white;
+                border:none;
+                outline: none;/*去掉边框*/
+                height: 30px;
+            }
+            button.submit{
+                padding-bottom: 25px;
+                padding-top: 9px;
+                border-left-width: 0px;
+                border-left-style: solid;
+                border-right-width: 0px;
+                border-right-style: solid;
+                padding-left: 2px;
+                padding-right: 10px;
+                line-height: 1.1;
+                font-weight: 600;
+                font-size: 12px;
+                top: 4px;
+            }
+            .SHUXIAN {/*底下小字*/
+                   width: 600px;
+                   height: 30px;
+                   align-self: flex-end;
+                   padding-left: 0px;
+                   margin-left: -288px;
+                   margin-bottom: 15px;
+            }
+            .SHUXIAN a{/*竖线*/
+                display: block;
+                color:white;
+                float: left; 
+                font-size: 14px;
+                border-right:1px solid white;
+                padding-right:10px;
+            }
+            .SHUXIAN b{/*HOT栏目*/
+                display: block;color:white;
+                float: left; 
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .D{
+                padding-top: 0px;
+                margin-top: 440px;
+                height: 430px;        
+                padding-left: 910px;
+                padding-right: 50px;
+                line-height: 31px;
+                letter-spacing: 0.088em;
+                display: flex;/*行内元素弹性布局*/
+                margin: auto;
+                padding-left: 880px;
+            }
+            .D p{
+                margin-left: 690px;
+                width: 150px;
+                font-size: 25px;
+                line-height: 30px;
+                margin-top: -44px;
+                margin-bottom: 0px;
+            }
+            .D ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                background-color: black;
+                font-size: 19px;
+                font-weight: 900;
+                height: 280px;
+                letter-spacing: 1.408px;
+                line-height: 31px;
+                margin-left: -800px;
+                text-align: center;
+                width: 180px;
+                border-top-width: 2px;
+                border-top-style: solid;
+                border-left-width: 2px;
+                border-left-style: solid;
+                border-top-color: #b0a4a4;
+            }
+            .D li{
+                border-bottom-width: 5px;
+                border-bottom-style: solid;
+                border-color: #b0a4a4;
+            }
+            .D li a{/* 导航链接 */
+                display: block;
+                color: white;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+            .D li a.active{
+                background-color: white;
+                color:  black;
+            }
+            li a:hover:not(.active) {/* 链接 - 修改颜色 */
+                 background-color: #555;
+                 color: white;
+             }
+             .E{/*图文排版*/
+                height: 430px;  
+                padding-left: 20px;
+                line-height: 31px;
+                letter-spacing: 0.088em;
+                text-align: center;
+                display: flex;/*行内元素弹性布局*/
+                border-color: #b0a4a4 ;
+                width: 1124px;
+                padding-right: 0px;
+                border-width: 1px;
+                border-top-width: 3px;
+                border-style: solid;
+            }
+            .tao{/*图片格子*/
+            width: 505px;
+            height: 178px;
+            margin-left: -90px;
+            padding-left: 88px;
+            display: flex;
+            padding-right: 50px;
+            padding-top: 10px;
+            }
+            .tao img{
+                width: 240px;
+                height: 175px;
+                flex-shrink: 0;/*防止默认*/
+            }
+            .tao p{
+                display: flex;
+                color:black;
+                flex-wrap: wrap;/*会换行*/
+                flex-shrink: 0;
+                width: 250px;
+                font-size: 16px;
+                font-weight: 100;
+                margin-left: 0px;
+                margin-top: 0px;
+                height: 177px;
+                padding-left: 8px;
+            }
+            .tao a{
+                text-decoration: none;
+                color:cadetblue;
+            }
+            .last{
+                display: flex;
+                padding-left: 75px;
+                margin-left: 0px;
+                margin-top: 50px;
+                padding-top: 0px;
+            }
+            .last span{
+                font-weight: 900;
+                font-size: 35px;
+            }
+            .last table{
+                padding-left: 0px;
+                padding-top: 5px;
+                display: flex;
+                width: 320px;
+            }
+            .last tr{
+                display: flex;
+                width: 316px;
+                padding-left: 16px;
+            }
+            .last td{
+                display: flex;
+                padding-right: 30px;
+                flex-shrink: 0;
+                width: 330px;
+                padding-top: 10px;
+            }
+            .last img{
+                width: 50px;
+                height: 45px;
+                padding-top: 15px;
+                padding-right: 20px;
+            }
+            .white{/*白色部分*/
+                display: flex;
+                flex-wrap: wrap;
+                color:black;
+                width: 642px;
+                border-top-width: 1px;
+                border-top-style: solid;
+                width: 690px;
+            }
+            
+            .black{
+                display: block;
+                flex-wrap: wrap;
+                color:white;
+                border-top: black;
+                background-color: black;
+                margin-left: 680px;
+                width: 715px;
+                height: 190px;
+                position: absolute;
+            }
+            .right {
+               float: right;
+               width: 70px;
+               position:fixed;
+	           top:300px;
+	           right:0px;
+            }
+            .ground{
+                background-color: #a9a9a4;
+                color: white;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            .ground img{
+                opacity:0.4;/*透明图像*/
+            }
+            .ground img:hover{
+                opacity:1.0;/*悬停效果*/
+            }
+        </style>
+    </head>
+<body>
+    <div class="all">
+    <div id="header" class="top">
+    <img src="dh.jpg" >020-310-41987<img src="dx.jpg" >chn_mahone@163.com
+    &nbsp&nbsp<span style="width: 300px;padding-left: 280px; padding-right: 200px;">欢迎来到热泉港！</span><img src="rt.jpg" ><a href="#">登录</a>&nbsp&nbsp<a href="#">注册</a></p>
+    </div>
+    <div class="B">
+        <img src="bz.png" align="middle"><img id="a"src="wzbz.png" align="middle">
+    <tablel style=" margin-top: 20px;">
+        <tr><td><a class="active" href="#">Yechine首页</a></td><td><a href="#">公司首页</a></td><td><a href="#">人才招聘</a></td>
+        <td><a href="#">公告通知</a></td><td><a href="#">联系我们</a></td></tr>
+    </tablel>
+    </div>
+    <div class="C"> 
+     <div class="site-search">
+         <table>
+       <tr> <td><button type="button" onclick="javascript:doSearch();" class="submit"><img src="jz.png" align="middle">全部搜索</button></td>
+       <td><input  name="s" class="text" placeholder="请输入您要搜索的产品分类、型号" /></td>
+    </tr></table>
+        <table><tr>
+        <button type="button" style="top: 43px;left: 504px;" onclick="javascript:doSearch();" style="top:42px;"  class="submit"><img src="jz.png" align="middle">名称搜索</button>
+        <input  name="s" style="margin-left: 95px;"class="text" placeholder="请输入您要搜索的产品名称" />
+    </tr></table>
+     </div>
+     <div class="SHUXIAN">
+        <b>HOT关键词：</b><a>&nbsp灭菌器</a><a>&nbsp离心管</a><a>&nbsp手套</a><a>&nbsppH计</a><a>&nbsp活性口罩</a><a>&nbsp滤纸</a><a>&nbsp胶头</a><b>&nbsp三脚架</b>
+     </div>
+    </div>
+    <p id="biaoti">/更多资讯/</p>
+    <div class="D">
+                <ul>
+            <li><a class="active" href="#home" style=" border-top-width: 1px;border-top-style: solid;">尖端科技</a></li>
+            <li><a href="#n">网络研讨会</a></li>
+            <li><a href="#n">食药资讯</a></li>
+            <li><a href="#n">最新应用</a></li>
+        </ul>
+        <div class="E">
+        <table>
+            <tr>
+            <td><div class="tao">
+                <img src="a.png">
+                <p>KTrac智能液体萃取平台可用于固体、液体中目标物质的自动提取，过滤实验，可用于农业、烟草、化学、食品、制药等行业
+                <a style="align-items: flex-end;margin-left: 180px;
+                padding-top: 0px;"><a href="#">了解更多</a></p>
+            </div></td>
+            <td><div class="tao">
+                <img src="b.png">
+                <p>GraviTrac智能称量平台可用于大批量的称重、恒重实验，可用于制药、农业、烟草、化工、食品、制药等行业。
+                <a style="align-items: flex-end;margin-left: 180px;
+                padding-top: 0px;"><a href="#">了解更多</a></p>
+            </div></td>
+        </tr>
+        <tr>
+            <td><div class="tao">
+                <img src="c.png">
+                <p>MultiTasker智能多功能样品制备平台用于前处理样品的制备，可自动完成液体化的处理，标样的制备、提取、过滤等实验，可用于制药、食品、农业、化学等行业。
+                <a style="align-items: flex-end;margin-left: 180px;
+                padding-top: 0px;"><a href="#">了解更多</a></p>
+            </div></td>
+            <td><div class="tao">
+                <img src="d.png">
+                <p>GraviTracPLUS智能称重分装平台用于多种固体样品的自动称量及分装，混合可用于化学、食品、制药等行业
+                <a style="align-items: flex-end;margin-left: 180px;
+                padding-top: 0px;"><a href="#">了解更多</a></p>
+            </div></td>
+        </tr>
+        </table>
+    </div>
+    </div>
+
+    <div class="last">
+        <div class="white">
+            <table>
+                <tr>
+                    <td style="vertical-align:text-bottom"><img src="1.png"><div><span>大量现货</span></br>现货产品4点前下单当天发货</div></td>
+                    <td style="vertical-align:text-bottom"><img src="2.png"><div><span>满500免运费</span></br>部分区域订单满500免运费</div></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:text-bottom"><img src="5.png"><div><span>增值税专用发票</span></br>可提供增值税专用发票</div></td>
+                    <td style="vertical-align:text-bottom"><img src="6.png"><div><span>快捷配送</span></br>一件即发，享受快捷服务</div></td>
+                </tr>
+            </table>
+        </div>
+        <div class="black">
+            <table>
+                <tr>
+                    <td style="vertical-align:text-bottom"><img src="3.png"><div><span>价格低</span></br>力求最合适的产品配最优的价格</div></td>
+                    <td style="vertical-align:text-bottom"><img src="4.png"><div><span>货期短</span></br>专人负责，专业跟进，提高效率</div></td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:text-bottom"><img src="7.png"><div><span>品种多</span></br>商品种类涵盖多个应用领域</div></td>
+                    <td style="vertical-align:text-bottom"><img src="8.png"><div><span>包退换</span></br>有质量或者功能问题包退换</div></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <div class="right">
+        <div class="ground"><img src="11.png"></br><a>二维码</a></div>
+        <div class="ground"><img src="12.png"></br><a>在线客服</a></div>
+        <div class="ground"><img src="13.png"></br><a>回到顶部</a></div>
+    </div>
+    </div>
+</div>
+</body>  
+</html>
